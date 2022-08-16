@@ -1,44 +1,150 @@
+<!-- En este proyecto se utilizó Bootstrap y Jquery -->
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    
+    <link rel="stylesheet" 
+          href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+    </script>
     <title>Calculadora Web</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <main>
-        <article id="Calculadora">
-            <input id="Display" type="text">
-            <div class="fila">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button class="operacion">÷</button>
+  
+<!-- Creación de Divs para moldear la calculadora .-->
+  
+    <div class="row">
+        <div class="col-sm-2 col-md-4">   </div>
+        <div class="col-sm-8 col-md-4">
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="container calculator">
+               <!--Colocar displays de la operación y de resultado  -->
+                <div class="form-input">
+                    <input type="text" 
+                           class="form-control input-lg" 
+                           id="expression" 
+                           value="0" 
+                           disabled>
+                    <input type="text" 
+                           class="form-control input-xs"
+                           id="result"
+                           value="0"
+                           disabled>
+                </div>
+                <br>
+                <br>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="design">1</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="design">2</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="design">3</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="design" 
+                                 >
+                              +</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="design">4</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="design">5</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="design">6</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="design" 
+                                >
+                              -</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="design">7</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="design">8</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="design">9</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="design" 
+                                 >
+                              *</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="design">0</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="design">.</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="design not"
+                                 id="backspace"> ← </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="design"
+                                >
+                              / </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="design"style="background-color: #9917b9;"
+                                >
+                              (</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="design" style="background-color:#9917b9;"
+                                 >
+                              )</div>
+                        </div>
+                        
+                        <div class="col-sm-3">
+                            <div class="design not"
+                                 id="allClear"
+                                 style="background-color:#00a2ff;">
+                              AC</div>
+                        </div>
+                        
+                        <div class="col-sm-3">
+                            <div class="design not" 
+                                 id="equals"
+                                 style="background-color:#00a2ff;">
+                              =</div>
+                        </div>
+  
+                    </div>
+                </div>
             </div>
-            <div class="fila">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button class="operacion">x</button>
-            </div>
-            <div class="fila">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button class="operacion">-</button>
-            </div>
-            <div class="fila">
-                <button>0</button>
-                <button>.</button>
-                <button>=</button>
-                <button class="operacion">+</button>
-            </div>
-        </article>
-    </main>
+        </div>
+        <div class="col-sm-2 col-md-4">   </div>
+    </div>
+    
 
-    <footer>Digitalers 2022 - BIANCA GARCÍA SAGRETTI</footer>
-    <script src="main.js"></script>
+<footer>Digitalers 2022 - BIANCA GARCÍA SAGRETTI</footer>
+<script src="main.js"></script>
 </body>
 </html>
